@@ -3,6 +3,7 @@ import Portfolio from "./HomePageComponents/Portfolio"
 import CaseStudy from "./HomePageComponents/CaseStudy"
 import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
 import ValueProposition from "@/app/HomePageComponents/ValueProposition";
+import Offer from "@/app/HomePageComponents/Offer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <CaseStudy/>
         <CustomerReviews/>
         <ValueProposition/>
+        <Offer/>
     </section>
   );
 }
