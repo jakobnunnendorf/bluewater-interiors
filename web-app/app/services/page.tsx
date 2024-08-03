@@ -1,4 +1,4 @@
-import Hero from "@/app/HomePageComponents/Hero";
+import Hero from "@/app/LayoutComponents/Hero/Hero";
 import Services from "./Services"
 import ContactForm from "@/app/contact/ContactForm";
 

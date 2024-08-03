@@ -1,4 +1,4 @@
-import Hero from "./HomePageComponents/Hero"
+import Hero from "./LayoutComponents/Hero/Hero"
 import Portfolio from "./HomePageComponents/Portfolio"
 import CaseStudy from "./HomePageComponents/CaseStudy"
 import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";

@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import Hero from "@/app/HomePageComponents/Hero";
+import Hero from "@/app/LayoutComponents/Hero/Hero";
 
 export default function Contact() {
     return (

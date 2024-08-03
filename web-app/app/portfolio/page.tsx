@@ -1,5 +1,5 @@
 import Portfolio from './Portfolio';
-import Hero from "@/app/HomePageComponents/Hero";
+import Hero from "@/app/LayoutComponents/Hero/Hero";
 import ContactForm from "@/app/contact/ContactForm";
 
 export default function PortfolioPage() {
