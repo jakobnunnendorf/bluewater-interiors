@@ -1,6 +1,6 @@
-import Hero from "./Hero"
-import Portfolio from "./Portfolio"
-import CaseStudy from "./CaseStudy"
+import Hero from "./HomePageComponents/Hero"
+import Portfolio from "./HomePageComponents/Portfolio"
+import CaseStudy from "./HomePageComponents/CaseStudy"
 
 export default function Home() {
   return (
