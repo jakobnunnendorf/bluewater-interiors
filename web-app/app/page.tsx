@@ -6,7 +6,7 @@ import ValueProposition from "@/app/HomePageComponents/ValueProposition/ValuePro
 import Offer from "@/app/HomePageComponents/Offer/Offer";
 import Introduction from "@/app/HomePageComponents/Introduction/Introduction";
 import NotConvinced from "@/app/HomePageComponents/NotConvinced";
-import CustomerStories from "@/app/HomePageComponents/CustomerStories";
+import CustomerStories from "@/app/HomePageComponents/CustomerStories/CustomerStories";
 
 export default function Home() {
   return (
