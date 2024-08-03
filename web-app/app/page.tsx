@@ -4,7 +4,8 @@ import CaseStudy from "./HomePageComponents/CaseStudy"
 import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
 import ValueProposition from "@/app/HomePageComponents/ValueProposition";
 import Offer from "@/app/HomePageComponents/Offer";
-import Introduction from "@/app/HomePageComponents/CustomerReviews/Introduction";
+import Introduction from "@/app/HomePageComponents/Introduction";
+import NotConvinced from "@/app/HomePageComponents/NotConvinced";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <ValueProposition/>
         <Offer/>
         <Introduction/>
+        <NotConvinced/>
     </section>
   );
 }
