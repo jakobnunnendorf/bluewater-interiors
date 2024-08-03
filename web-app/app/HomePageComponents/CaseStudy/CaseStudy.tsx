@@ -1,4 +1,6 @@
 import React from 'react';
+import TextWindow from "@/app/HomePageComponents/CaseStudy/TextWindow";
+import CaseStudyVideo from "@/app/HomePageComponents/CaseStudy/CaseStudyVideo";
 
 function CaseStudy() {
     return (
@@ -10,15 +12,8 @@ function CaseStudy() {
                 or 100% money back
             </h3>
             <div className="grid grid-cols-2">
-                <video autoPlay loop muted className="w-full">
-                    <source src="/case study.mp4" type="video/mp4"/>
-                </video>
-                <div className="flex flex-col items-center justify-center">
-                    <h3 className="text-4xl">Results after 3 months</h3>
-                    <h4>+380% Clicks</h4>
-                    <h4>+37% More leads</h4>
-                    <h4>+5% Conversion</h4>
-                </div>
+                <CaseStudyVideo/>
+                <TextWindow/>
             </div>
         </div>
     );
