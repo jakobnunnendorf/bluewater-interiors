@@ -6,6 +6,7 @@ import ValueProposition from "@/app/HomePageComponents/ValueProposition";
 import Offer from "@/app/HomePageComponents/Offer";
 import Introduction from "@/app/HomePageComponents/Introduction";
 import NotConvinced from "@/app/HomePageComponents/NotConvinced";
+import CustomerStories from "@/app/HomePageComponents/CustomerStories";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Offer/>
         <Introduction/>
         <NotConvinced/>
+        <CustomerStories/>
     </section>
   );
 }
