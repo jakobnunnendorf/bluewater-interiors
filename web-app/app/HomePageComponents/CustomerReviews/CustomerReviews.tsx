@@ -1,6 +1,7 @@
 "use client";
+
 import React, { useState } from "react";
-import Review from "@/app/HomePageComponents/CustomerReviews/Review";
+import Carousel from "@/app/HomePageComponents/CustomerReviews/Carousel";
 
 function CustomerReviews() {
   const reviews = [
@@ -16,13 +17,13 @@ function CustomerReviews() {
       rating: 5,
       review: `As a luxury yacht interior designer, the details of elegance and sophistication are crucial in my work. 
     When it came to creating a new website, I sought a partner who could translate these qualities into a digital format, 
-    and I found exactly that with Bluewater Interiors.`,
+    and I found exactly that with BlueWater Interiors.`,
     },
     {
       name: "Laura Bennett",
       rating: 5,
       review: `In my career as a yacht interior designer, presenting my work online with the same level of luxury 
-    and precision I offer my clients is essential. Bluewater Interiors exceeded my expectations, 
+    and precision I offer my clients is essential. BlueWater Interiors exceeded my expectations, 
     delivering a website that perfectly showcases the beauty and functionality of my designs.`,
     },
   ];
@@ -41,36 +42,25 @@ function CustomerReviews() {
     );
   };
 
+  const getVisibleReviews = () => {
+    const visibleReviews = [];
+    for (let i = 0; i < 3; i++) {
+      visibleReviews.push(reviews[(currentIndex + i) % reviews.length]);
+    }
+    return visibleReviews;
+  };
+
   return (
-    <div className="relative w-full">
+    <div className="relative w-full py-24">
       <h2 className="p-16 text-center text-4xl">What our Customers say</h2>
-      <div className="relative flex items-center justify-center overflow-hidden">
+      <div className="relative flex items-center justify-center overflow-hidden md:mx-auto md:w-1/2">
         <button
           className="absolute left-0 z-10 rounded-full bg-gray-800 p-2 text-white"
           onClick={handlePrev}
         >
           &#10094;
         </button>
-        <ul
-          className="flex w-full transition-transform duration-500 ease-in-out"
-          style={{ transform: `translateX(-${currentIndex * 33.3333}%)` }}
-        >
-          {reviews.map((review, index) => (
-            <li
-              key={index}
-              className="w-1/3 flex-shrink-0 px-4"
-              style={{
-                transform: `translateX(${(index - currentIndex) * 100}%)`,
-              }}
-            >
-              <Review
-                name={review.name}
-                rating={review.rating}
-                review={review.review}
-              />
-            </li>
-          ))}
-        </ul>
+        <Carousel reviews={getVisibleReviews()} />
         <button
           className="absolute right-0 z-10 rounded-full bg-gray-800 p-2 text-white"
           onClick={handleNext}
