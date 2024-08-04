@@ -9,7 +9,7 @@ function Navigation() {
   const toggleOpen = () => setIsOpen(!isOpen);
   const style = isOpen
     ? "translate-none"
-    : "flex flex-col -translate-x-[100vw]";
+    : "flex flex-col -translate-x-[110vw]";
   const links = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },

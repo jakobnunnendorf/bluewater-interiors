@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Boutique websites for Yacht Interior Designers",
   icons: {
     icon: "/favicon_v3.png",
-  }
+  },
 };
 
 export default function RootLayout({
@@ -20,12 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <body className={inter.className}>
-      <HeaderBar/>
-      <main className=" ">
-        {children}
-      </main>
-    </body>
+      <body className={inter.className}>
+        <HeaderBar />
+        <main className="relative top-28 md:static md:top-0">{children}</main>
+      </body>
     </html>
-);
+  );
 }
