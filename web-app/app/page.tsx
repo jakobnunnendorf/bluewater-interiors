@@ -1,6 +1,6 @@
-import Hero from "./LayoutComponents/Hero/Hero"
-import Portfolio from "./HomePageComponents/Portfolio/Portfolio"
-import CaseStudy from "./HomePageComponents/CaseStudy/CaseStudy"
+import Hero from "./LayoutComponents/Hero/Hero";
+import Portfolio from "./HomePageComponents/Portfolio/Portfolio";
+import CaseStudy from "./HomePageComponents/CaseStudy/CaseStudy";
 import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
 import ValueProposition from "@/app/HomePageComponents/ValueProposition/ValueProposition";
 import Offer from "@/app/HomePageComponents/Offer/Offer";
@@ -11,15 +11,15 @@ import CustomerStories from "@/app/HomePageComponents/CustomerStories/CustomerSt
 export default function Home() {
   return (
     <section className="h-fit">
-      <Hero/>
-      <Portfolio/>
-      <CaseStudy/>
-        <CustomerReviews/>
-        <ValueProposition/>
-        <Offer/>
-        <Introduction/>
-        <NotConvinced/>
-        <CustomerStories/>
+      <Hero />
+      <Portfolio />
+      {/*<CaseStudy />*/}
+      {/*<CustomerReviews />*/}
+      {/*<ValueProposition />*/}
+      {/*<Offer />*/}
+      {/*<Introduction />*/}
+      {/*<NotConvinced />*/}
+      {/*<CustomerStories />*/}
     </section>
   );
 }
