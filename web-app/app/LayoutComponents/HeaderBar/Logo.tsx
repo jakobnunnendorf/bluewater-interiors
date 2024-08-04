@@ -1,14 +1,21 @@
-import React from 'react';
+import React from "react";
 import Image from "next/image";
 
 function Logo() {
-    return (
-        <figure className="w-fit h-full p-1 flex flex-col items-center justify-center align-baseline">
-            <Image src="/bluewater-interiors-logo.png" height={64} width={64} alt="Blue Interiors Logo"/>
-            <p className="text-[#FDEBBD] text-center font-serif leading-4 p-2">BlueWater<br/> <span
-                className="text-[#FDEBBD]/80 leading-3">Interiors</span></p>
-        </figure>
-    );
+  return (
+    <figure className="col-start-2 row-start-1 flex h-full w-fit flex-col items-center justify-center p-1">
+      <Image
+        src="/bluewater-interiors-logo.png"
+        height={64}
+        width={64}
+        alt="Blue Interiors Logo"
+      />
+      <p className="p-2 text-center font-serif leading-4 text-[#FDEBBD]">
+        BlueWater
+        <br /> <span className="leading-3 text-[#FDEBBD]/80">Interiors</span>
+      </p>
+    </figure>
+  );
 }
 
 export default Logo;
