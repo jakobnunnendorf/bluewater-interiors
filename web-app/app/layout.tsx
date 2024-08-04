@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "BlueWater Interiors",
   description: "Boutique websites for Yacht Interior Designers",
   icons: {
-    icon: "/favicon_v3.png",
+    icon: "/favicons/favicon_v3.png",
   },
 };
 

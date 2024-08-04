@@ -9,7 +9,9 @@ function Hamburger({
   isOpen: boolean;
   toggleOpen: () => void;
 }) {
-  const src = isOpen ? "/close burger.png" : "/open burger.png";
+  const src = isOpen
+    ? "/nav icons/close burger.png"
+    : "/nav icons/open burger.png";
   return (
     <button className="md:hidden" onClick={toggleOpen}>
       <Image src={src} height={40} width={40} alt={src} />

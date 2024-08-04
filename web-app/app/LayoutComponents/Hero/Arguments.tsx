@@ -14,19 +14,19 @@ function Arguments() {
   const sellingPoints = [
     {
       text: "+ leads",
-      src: "/ringing.svg",
+      src: "/arguments/ringing.svg",
     },
     {
       text: "+ projects",
-      src: "/yacht-icon.png",
+      src: "/arguments/yacht-icon.png",
     },
     {
       text: "+ trust",
-      src: "/mac-icon.png",
+      src: "/arguments/mac-icon.png",
     },
     {
       text: "+ spotlight",
-      src: "/spotlight-icon.png",
+      src: "/arguments/spotlight-icon.png",
     },
   ];
   return (
