@@ -1,14 +1,14 @@
-import React from 'react';
-import BGVideo from "@/app/LayoutComponents/Hero/BGVideo";
+import React from "react";
+import BGVideo from "@/app/LayoutComponents/Hero/Background";
 import HeadLine from "@/app/LayoutComponents/Hero/HeadLine";
 
 function Hero() {
-    return (
-        <div className="h-fit">
-            <HeadLine/>
-            <BGVideo/>
-        </div>
-    );
+  return (
+    <div className="w-full md:h-screen">
+      <HeadLine />
+      <BGVideo />
+    </div>
+  );
 }
 
 export default Hero;
