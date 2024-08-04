@@ -1,7 +1,7 @@
 import Hero from "./LayoutComponents/Hero/Hero";
 import Portfolio from "./HomePageComponents/Portfolio/Portfolio";
 import CaseStudy from "./HomePageComponents/CaseStudy/CaseStudy";
-// import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
+import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
 // import ValueProposition from "@/app/HomePageComponents/ValueProposition/ValueProposition";
 // import Offer from "@/app/HomePageComponents/Offer/Offer";
 // import Introduction from "@/app/HomePageComponents/Introduction/Introduction";
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <Portfolio />
       <CaseStudy />
-      {/*<CustomerReviews />*/}
+      <CustomerReviews />
       {/*<ValueProposition />*/}
       {/*<Offer />*/}
       {/*<Introduction />*/}
