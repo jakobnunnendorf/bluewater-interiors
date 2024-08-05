@@ -1,5 +1,6 @@
 import React from "react";
 import Story from "@/app/HomePageComponents/CustomerStories/Story";
+import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
 
 function CustomerStories() {
   const stories = [
@@ -9,20 +10,13 @@ function CustomerStories() {
     { src: "/customer stories/customer 4.webp" },
   ];
   return (
-    <div className="py-32">
+    <div className="rborder pt-32">
       <h2 className="text-center text-4xl font-bold">
-        Don&apos;t listen to us
+        Don&apos;t listen to us, <br /> listen to:
       </h2>
-      <h3 className="text-center text-2xl opacity-65">
-        Listen to our customers
-      </h3>
-      <ul className="flex p-16">
-        {stories.map((story, index) => (
-          <li key={index}>
-            <Story src={story.src} />
-          </li>
-        ))}
-      </ul>
+      <div className="relative bottom-28">
+        <CustomerReviews />
+      </div>
     </div>
   );
 }
