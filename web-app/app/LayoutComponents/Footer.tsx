@@ -39,7 +39,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="relative">
           <h3 className="mb-4 text-xl font-bold">Contact Us</h3>
           <p className="mb-2 text-sm">
             Email:{" "}
@@ -53,10 +53,12 @@ function Footer() {
               +65 842 505 80
             </Link>
           </p>
-          <Socials />
         </div>
       </div>
-      <div className="mt-8 border-t border-gray-800 pt-4 text-center text-sm">
+      <div className="relative mx-auto h-full w-full py-8 md:w-fit">
+        <Socials />
+      </div>
+      <div className="border-t border-gray-800 text-center text-sm">
         &copy; {new Date().getFullYear()} BlueWater Interiors Agency. All rights
         reserved.
       </div>
