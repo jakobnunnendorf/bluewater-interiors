@@ -1,13 +1,9 @@
-import Hero from "@/app/LayoutComponents/Hero/Hero";
-import Services from "./Services"
-import ContactForm from "@/app/contact/ContactForm";
+import Services from "./Services";
 
 export default function ServicesPage() {
-    return (
-        <section className="h-fit">
-            <Hero/>
-            <Services/>
-            <ContactForm/>
-        </section>
-    );
+  return (
+    <section id="services-page" className="h-fit">
+      <Services />
+    </section>
+  );
 }

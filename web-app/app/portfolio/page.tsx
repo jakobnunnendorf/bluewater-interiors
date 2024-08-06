@@ -1,13 +1,9 @@
-import Portfolio from './Portfolio';
-import Hero from "@/app/LayoutComponents/Hero/Hero";
-import ContactForm from "@/app/contact/ContactForm";
+import Portfolio from "./Portfolio";
 
 export default function PortfolioPage() {
-    return (
-        <section className="h-fit">
-            <Hero/>
-            <Portfolio/>
-            <ContactForm/>
-        </section>
-    );
+  return (
+    <section id="portfolio-page" className="h-fit">
+      <Portfolio />
+    </section>
+  );
 }

@@ -1,4 +1,3 @@
-import Hero from "./LayoutComponents/Hero/Hero";
 import Portfolio from "./HomePageComponents/Portfolio/Portfolio";
 import CaseStudy from "./HomePageComponents/CaseStudy/CaseStudy";
 import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
@@ -11,7 +10,6 @@ import CustomerStories from "@/app/HomePageComponents/CustomerStories/CustomerSt
 export default function Home() {
   return (
     <section className="h-fit">
-      <Hero />
       <Portfolio />
       <CaseStudy />
       <CustomerReviews />
