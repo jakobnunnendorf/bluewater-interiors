@@ -13,7 +13,7 @@ const socialLinks = [
   {
     src: "Instagram.png",
     alt: "Instagram button",
-    color: "black",
+    color: "#000",
     url: "https://www.instagram.com/jakobnunnendorf",
   },
   {
@@ -31,7 +31,7 @@ const socialLinks = [
   {
     src: "X.png",
     alt: "Twitter button",
-    color: "white",
+    color: "#fff",
     url: "https://x.com/jakobnunnendorf",
   },
   {
@@ -43,11 +43,11 @@ const socialLinks = [
 ];
 
 const SocialIcons = () => (
-  <ul className="absolute bottom-20 right-0 z-10 ml-auto mr-0 hidden w-1/2 justify-end gap-12 px-16 md:flex">
+  <ul className="flex justify-around md:justify-end md:gap-12">
     {socialLinks.map((link, index) => (
       <li
         key={index}
-        className={`aspect-square w-fit p-2 bg-[${link.color}] flex items-center justify-center rounded-xl`}
+        className="flex aspect-square w-fit items-center justify-center rounded-xl p-2"
       >
         <Link href={link.url} passHref>
           <Image src={dir + link.src} height={30} width={30} alt={link.alt} />

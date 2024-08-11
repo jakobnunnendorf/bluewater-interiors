@@ -8,9 +8,8 @@ import BookCall from "@/app/LayoutComponents/Hero/BookCall";
 
 function HeadLine() {
   return (
-    <div className="relative z-10 flex h-full w-full flex-col justify-center md:grid md:grid-rows-5 md:justify-normal">
-      <div className="h-full w-full"></div>
-      <div className="h-full w-full md:row-span-3 md:grid md:grid-rows-5">
+    <div className="mt-28 flex h-full w-full flex-col justify-center md:absolute md:mt-0 md:grid md:grid-rows-5 md:justify-normal">
+      <div className="h-full w-full md:row-span-3 md:row-start-2 md:grid md:grid-rows-5">
         <div></div>
         <HeroHeading />
         <Arguments />
@@ -20,8 +19,9 @@ function HeadLine() {
           <BookCall />
         </div>
       </div>
-      <div className="h-full w-full"></div>
-      <Socials />
+      <div className="row-start-5 ml-auto mr-0 hidden w-fit px-16 py-8 md:flex md:items-end md:justify-end">
+        <Socials />
+      </div>
     </div>
   );
 }

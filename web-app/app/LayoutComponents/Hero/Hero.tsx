@@ -4,7 +4,7 @@ import HeadLine from "@/app/LayoutComponents/Hero/HeadLine";
 
 function Hero() {
   return (
-    <div className="w-full md:h-screen">
+    <div id="hero-section" className="relative w-full md:h-fit">
       <HeadLine />
       <BGVideo />
     </div>
