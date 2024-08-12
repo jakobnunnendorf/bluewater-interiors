@@ -20,7 +20,7 @@ function HowItWorks() {
           height={140}
           width={140}
         />
-        <figcaption className="text-2xl">No reinventing the wheel</figcaption>
+        <figcaption className="text-2xl">Not reinventing the wheel</figcaption>
       </figure>
       <figure className="mx-auto flex flex-col items-center">
         <Image
