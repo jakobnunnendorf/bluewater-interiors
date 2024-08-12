@@ -1,17 +1,19 @@
 import React from "react";
 import Card from "@/app/HomePageComponents/Portfolio/Card";
+import Link from "next/link";
 
 function Grid() {
   return (
     <div className="grid h-fit w-fit grid-rows-3 gap-8 px-6 py-12 md:grid-cols-2 md:grid-rows-none md:px-40">
       {articles.map((article, index) => (
-        <Article
-          key={index}
-          src={article.src}
-          alt={article.alt}
-          title={article.title}
-          description={article.description}
-        />
+        <Link key={index} href={article.link}>
+          <Article
+            src={article.src}
+            alt={article.alt}
+            title={article.title}
+            description={article.description}
+          />
+        </Link>
       ))}
     </div>
   );
@@ -28,6 +30,7 @@ const articles = [
         design studio that we made up to showcase a few example website
         designs. It is led by the internationally renown fictional chief
         designer Sophie Lance.`,
+    link: "",
   },
   {
     src: "/portfolio/pf1.png",
@@ -38,6 +41,7 @@ const articles = [
       free of charge. The Lürssen Solandge project was particularly exciting as
       it allowed us to incorporate luxury design elements that highlight the 
       elegance and sophistication of the yacht.`,
+    link: "https://landing-page-delta-brown-52.vercel.app/",
   },
   {
     src: "/portfolio/pf2.png",
@@ -47,6 +51,7 @@ const articles = [
       design to better represent the prestigious yacht interior design studio. The project involved
       a complete overhaul of the user interface to enhance usability and aesthetic appeal.
       `,
+    link: "",
   },
 ];
 
