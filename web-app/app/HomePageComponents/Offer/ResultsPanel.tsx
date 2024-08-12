@@ -17,9 +17,12 @@ function Metric({ result }: { result: Result }) {
 function ResultsPanel() {
   return (
     <div className="pb-10 pt-20">
-      <h2 className="pb-16 text-center font-fat text-4xl font-bold">
+      <h2 className="pb-8 text-center font-fat text-4xl font-bold">
         Our average client&apos;s results
       </h2>
+      <h3 className="pb-16 text-center font-fat text-3xl font-bold opacity-65">
+        (Numbers are not real yet)
+      </h3>
       <ul className="mx-auto grid w-fit grid-cols-2 gap-6 pb-16 md:grid-cols-5">
         {results.map((result, index) => {
           return (
