@@ -6,14 +6,14 @@ function Grid() {
   return (
     <div className="grid h-fit w-fit grid-rows-3 gap-8 px-6 py-12 md:grid-cols-2 md:grid-rows-none md:px-40">
       {articles.map((article, index) => (
-        <Link key={index} href={article.link}>
-          <Article
-            src={article.src}
-            alt={article.alt}
-            title={article.title}
-            description={article.description}
-          />
-        </Link>
+        <Article
+          key={index}
+          src={article.src}
+          alt={article.alt}
+          title={article.title}
+          description={article.description}
+          link={article.link}
+        />
       ))}
     </div>
   );
@@ -60,15 +60,19 @@ function Article({
   alt,
   title,
   description,
+  link,
 }: {
   src: string;
   alt: string;
   title: string;
   description: string;
+  link: string;
 }) {
   return (
     <article className="h-full rounded-xl bg-gray-200 p-4 shadow-2xl">
-      <Card src={src} alt={alt} />
+      <Link href={link}>
+        <Card src={src} alt={alt} />
+      </Link>
       <h3 className="p-4 pb-2 text-center text-2xl font-bold">{title}</h3>
       <p className="pb-4">{description}</p>
     </article>
