@@ -9,12 +9,12 @@ const projects = [
   {
     title: "Nautical Elegance",
     description: "Where luxury meets the horizon.",
-    image: "/portfolio/pf2.png",
+    image: "/portfolio/pf3.png",
   },
   {
     title: "Nautical Elegance Interior",
     description: "Where luxury meets the horizon.",
-    image: "/portfolio/pf3.png",
+    image: "/portfolio/pf2.png",
   },
 ];
 

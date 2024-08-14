@@ -23,14 +23,14 @@ export default Grid;
 
 const articles = [
   {
-    src: "/portfolio/pf3.png",
+    src: "/portfolio/pf2.png",
     alt: "Second version of the Nautical Elegance website",
     title: "Nautical Elegance",
     description: `Let us introduce you to Nautical Elegance, a fictional yacht interior
         design studio that we made up to showcase a few example website
         designs. It is led by the internationally renown fictional chief
         designer Sophie Lance.`,
-    link: "",
+    link: "https://nautical-elegance-v1.vercel.app/",
   },
   {
     src: "/portfolio/pf1.png",
@@ -44,14 +44,14 @@ const articles = [
     link: "https://landing-page-delta-brown-52.vercel.app/",
   },
   {
-    src: "/portfolio/pf2.png",
+    src: "/portfolio/pf3.png",
     alt: "Nautical Elegance website",
     title: "Nautical Elegance v2",
     description: `This is the second version of Nautical Elegance, an upgraded and more refined
       design to better represent the prestigious yacht interior design studio. The project involved
       a complete overhaul of the user interface to enhance usability and aesthetic appeal.
       `,
-    link: "",
+    link: "https://nautical-elegance-v2.vercel.app/",
   },
 ];
 
