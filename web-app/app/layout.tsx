@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import HeaderBar from "@/app/LayoutComponents/HeaderBar/HeaderBar";
-import Footer from "@/app/LayoutComponents/Footer";
+import HeaderBar from "@/app/components/LayoutComponents/HeaderBar/HeaderBar";
+import Footer from "@/app/components/LayoutComponents/Footer";
 import ContactSection from "@/app/contact/ContactSection";
-import Hero from "@/app/LayoutComponents/Hero/Hero";
-
-const inter = Inter({ subsets: ["latin"] });
+import Hero from "@/app/components/LayoutComponents/Hero/Hero";
 
 export const metadata: Metadata = {
   title: "BlueWater Interiors",
@@ -23,12 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className="">
         <HeaderBar />
-        <Hero />
-        <main className="relative md:static md:top-0">{children}</main>
-        <ContactSection />
-        <Footer />
+        {/* <Hero /> */}
+        <main className="">{children}</main>
+        {/* <ContactSection /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
