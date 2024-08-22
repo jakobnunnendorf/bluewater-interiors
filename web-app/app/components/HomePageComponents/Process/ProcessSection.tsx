@@ -17,7 +17,7 @@ const ProcessSection = (props: Props) => {
         height={740}
       />
       <div className="container flex w-full flex-col items-center lg:gap-6">
-        <header className="mt-10 flex w-full max-w-[890px] flex-col items-center gap-[18px] lg:mt-[140px]">
+        <header className="mt-10 flex w-full max-w-[890px] flex-col items-center gap-[18px] text-center lg:mt-[140px]">
           <TextWithBg
             title="Great results or 100% money back"
             isRounded={false}
