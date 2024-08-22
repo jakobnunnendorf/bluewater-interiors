@@ -7,11 +7,11 @@ function Portfolio() {
         <div className="flex flex-col items-center gap-3.5">
           <TextWithBg title="Boutique Websites For" />
           <div className="flex flex-col items-center gap-3">
-            <h2 className="text-center font-gilroy-medium text-[65px] font-normal leading-none text-black">
+            <h2 className="text-center font-gilroy-medium text-4xl font-normal leading-none text-black min-[477px]:text-5xl sm:text-[65px]">
               World-Class Yacht <br />{" "}
               <span className="text-primary-orange">Interior</span> Designers
             </h2>
-            <p className="text-gray-light font-gilroy-regular text-lg font-normal leading-none">
+            <p className="text-gray-light font-gilroy-regular text-xs font-normal leading-none min-[477px]:text-base sm:text-lg">
               Because we want to do your portfolio justice
             </p>
           </div>
