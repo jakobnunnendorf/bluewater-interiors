@@ -8,10 +8,10 @@ const openClassNames = {
 };
 
 const closeClassNames = {
-  right: "translate-x-full",
-  left: "-translate-x-full",
-  top: "-translate-y-full",
-  bottom: "translate-y-full",
+  right: "translate-x-[110%]",
+  left: "-translate-x-[110%]",
+  top: "-translate-y-[110%]",
+  bottom: "translate-y-[110%]",
 };
 
 const classNames = {

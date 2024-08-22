@@ -20,6 +20,9 @@ const config: Config = {
       colors: {
         "primary-orange": "#F17121",
         "gray-light": "#555555",
+        "gray-mid": "#D8D8D8",
+        "gray-mid-2": "#636363",
+        "terquoise-blue": "#0E8AA3",
       },
       fontFamily: {
         "gilroy-bold": ["Gilroy-Bold", "sans-serif"],

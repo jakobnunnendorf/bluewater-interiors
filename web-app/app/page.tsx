@@ -6,11 +6,13 @@ import Offer from "@/app/components/HomePageComponents/Offer/Offer";
 import Introduction from "@/app/components/HomePageComponents/Introduction/Introduction";
 import NotConvinced from "@/app/components/HomePageComponents/NotConvinced";
 import CustomerStories from "@/app/components/HomePageComponents/CustomerStories/CustomerStories";
+import ProcessSection from "@/app/components/HomePageComponents/Process/ProcessSection";
 
 export default function Home() {
   return (
     <section className="h-fit">
       <Portfolio />
+      <ProcessSection />
       <CaseStudy />
       <CustomerReviews />
       <ValueProposition />
