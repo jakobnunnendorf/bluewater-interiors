@@ -1,11 +1,11 @@
-import Portfolio from "./HomePageComponents/Portfolio/Portfolio";
-import CaseStudy from "./HomePageComponents/CaseStudy/CaseStudy";
-import CustomerReviews from "@/app/HomePageComponents/CustomerReviews/CustomerReviews";
-import ValueProposition from "@/app/HomePageComponents/ValueProposition/ValueProposition";
-import Offer from "@/app/HomePageComponents/Offer/Offer";
-import Introduction from "@/app/HomePageComponents/Introduction/Introduction";
-import NotConvinced from "@/app/HomePageComponents/NotConvinced";
-import CustomerStories from "@/app/HomePageComponents/CustomerStories/CustomerStories";
+import Portfolio from "./components/HomePageComponents/Portfolio/Portfolio";
+import CaseStudy from "./components/HomePageComponents/CaseStudy/CaseStudy";
+import CustomerReviews from "@/app/components/HomePageComponents/CustomerReviews/CustomerReviews";
+import ValueProposition from "@/app/components/HomePageComponents/ValueProposition/ValueProposition";
+import Offer from "@/app/components/HomePageComponents/Offer/Offer";
+import Introduction from "@/app/components/HomePageComponents/Introduction/Introduction";
+import NotConvinced from "@/app/components/HomePageComponents/NotConvinced";
+import CustomerStories from "@/app/components/HomePageComponents/CustomerStories/CustomerStories";
 
 export default function Home() {
   return (
