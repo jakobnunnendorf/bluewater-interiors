@@ -18,7 +18,8 @@ const config: Config = {
         },
       },
       colors: {
-        gold: "#FDEBBD", // Add your custom color here
+        "primary-orange": "#F17121",
+        "gray-light": "#555555",
       },
       fontFamily: {
         "gilroy-bold": ["Gilroy-Bold", "sans-serif"],

@@ -17,7 +17,7 @@ const Navigation: React.FC<Props> = ({
   return (
     <nav className={hiddenNavStyles}>
       <ul
-        className={`flex h-screen flex-col items-center justify-center font-gilroy-regular text-lg font-normal text-black lg:h-fit lg:w-[581px] lg:flex-row lg:justify-between`}
+        className={`flex flex-col items-center justify-center font-gilroy-regular text-lg font-normal text-black lg:h-fit lg:w-[581px] lg:flex-row lg:justify-between`}
       >
         {links.map((link) => (
           <li className="" key={link.link}>

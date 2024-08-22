@@ -9,16 +9,15 @@ import CustomerStories from "@/app/components/HomePageComponents/CustomerStories
 
 export default function Home() {
   return (
-    <p></p>
-    // <section className="h-fit">
-    //   <Portfolio />
-    //   <CaseStudy />
-    //   <CustomerReviews />
-    //   <ValueProposition />
-    //   <Offer />
-    //   <Introduction />
-    //   <NotConvinced />
-    //   <CustomerStories />
-    // </section>
+    <section className="h-fit">
+      <Portfolio />
+      <CaseStudy />
+      <CustomerReviews />
+      <ValueProposition />
+      <Offer />
+      <Introduction />
+      <NotConvinced />
+      <CustomerStories />
+    </section>
   );
 }
