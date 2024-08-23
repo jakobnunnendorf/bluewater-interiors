@@ -9,6 +9,7 @@ import ProcessSection from "@/app/components/HomePageComponents/Process/ProcessS
 import CarouselTwo from "./components/HomePageComponents/CustomerReviews/Carousel2";
 import GetCovered from "./components/HomePageComponents/GetCovered/GetCovered";
 import ClientSitesSection from "./components/HomePageComponents/ClientSites/ClientSitesSection";
+import OfferSection from "./components/HomePageComponents/OfferSection/OfferSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <GetCovered />
       <ClientResult />
       <ClientSitesSection />
+      <OfferSection />
       <Introduction />
       <NotConvinced />
       <CustomerStories />
