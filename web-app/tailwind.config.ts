@@ -23,6 +23,7 @@ const config: Config = {
         "gray-light-2": "#EAEAEA",
         "gray-mid": "#D8D8D8",
         "gray-mid-2": "#636363",
+        "primary-blue": "#3E79F3",
         "terquoise-blue": "#0E8AA3",
       },
       fontFamily: {
