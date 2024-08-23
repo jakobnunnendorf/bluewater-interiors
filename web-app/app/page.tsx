@@ -7,6 +7,7 @@ import NotConvinced from "@/app/components/HomePageComponents/NotConvinced";
 import CustomerStories from "@/app/components/HomePageComponents/CustomerStories/CustomerStories";
 import ProcessSection from "@/app/components/HomePageComponents/Process/ProcessSection";
 import CarouselTwo from "./components/HomePageComponents/CustomerReviews/Carousel2";
+import GetCovered from "./components/HomePageComponents/GetCovered/GetCovered";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <CaseStudy />
       <CarouselTwo />
       <ValueProposition />
+      <GetCovered />
       <Offer />
       <Introduction />
       <NotConvinced />
