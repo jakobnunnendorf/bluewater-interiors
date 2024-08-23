@@ -3,7 +3,7 @@ import HeadingTextLg from "../../UI/HeadingTextLg";
 
 function CaseStudy() {
   return (
-    <section className="bg-gray-light-2 mb-52 mt-24 py-12 lg:h-[665px] lg:pt-9">
+    <section className="mt-24 bg-gray-light-2 py-12 lg:mb-52 lg:h-[665px] lg:pt-9">
       <div className="flex w-full flex-col gap-11 max-xl:container xl:mx-auto xl:max-w-[1233px]">
         <header className="!text-left">
           <HeadingTextLg title="A fictional case study" />
