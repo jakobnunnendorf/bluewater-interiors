@@ -8,6 +8,7 @@ import GetCovered from "./components/HomePageComponents/GetCovered/GetCovered";
 import OfferSection from "./components/HomePageComponents/OfferSection/OfferSection";
 import Portfolio from "./components/HomePageComponents/Portfolio/Portfolio";
 import HesitateCard from "./components/HomePageComponents/HesitateCard/HesitateCard";
+import ContactUsSection from "./components/LayoutComponents/ContactUs/ContactUsSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,9 @@ export default function Home() {
       <ClientSitesSection />
       <OfferSection />
       <HesitateCard />
+      <div>
+        <ContactUsSection />
+      </div>
     </section>
   );
 }

@@ -22,10 +22,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="">
         <HeaderBar />
-        {/* <Hero /> */}
         <main className="">{children}</main>
-        {/* <ContactSection /> */}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

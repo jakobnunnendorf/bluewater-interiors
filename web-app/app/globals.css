@@ -4,12 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.rborder {
-  border: 2px solid red;
-}
-.gborder {
-  border: 2px solid green;
-}
-.bborder {
-  border: 2px solid blue;
+@layer components {
+  li::marker {
+    color: #f17121;
+  }
 }

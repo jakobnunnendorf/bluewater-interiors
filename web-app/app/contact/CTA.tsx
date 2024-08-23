@@ -1,5 +1,5 @@
 import React from "react";
-import BookCall from "@/app/LayoutComponents/Hero/BookCall";
+import BookCall from "../components/LayoutComponents/Hero/BookCall";
 
 function Cta() {
   return (

@@ -6,7 +6,7 @@ type Props = {};
 
 const HesitateCard = (props: Props) => {
   return (
-    <section className="container mt-[183px]">
+    <section className="container mt-28 md:mt-[183px]">
       <div className="flex items-center justify-between gap-5 rounded-[40px] bg-primary-orange pt-10 max-lg:flex-col lg:h-[275px] lg:pt-0">
         <div className="max-w-[413px] max-sm:mx-2 lg:ml-[67px] lg:min-w-[413px]">
           <header className="mb-6 !text-white">
