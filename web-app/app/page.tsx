@@ -8,6 +8,7 @@ import CustomerStories from "@/app/components/HomePageComponents/CustomerStories
 import ProcessSection from "@/app/components/HomePageComponents/Process/ProcessSection";
 import CarouselTwo from "./components/HomePageComponents/CustomerReviews/Carousel2";
 import GetCovered from "./components/HomePageComponents/GetCovered/GetCovered";
+import ClientSitesSection from "./components/HomePageComponents/ClientSites/ClientSitesSection";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ValueProposition />
       <GetCovered />
       <ClientResult />
+      <ClientSitesSection />
       <Introduction />
       <NotConvinced />
       <CustomerStories />
