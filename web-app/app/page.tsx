@@ -1,15 +1,13 @@
-import Portfolio from "./components/HomePageComponents/Portfolio/Portfolio";
-import CaseStudy from "./components/HomePageComponents/CaseStudy/CaseStudy";
-import ValueProposition from "@/app/components/HomePageComponents/ValueProposition/ValueProposition";
 import ClientResult from "@/app/components/HomePageComponents/ClientResult/ClientResult";
-import Introduction from "@/app/components/HomePageComponents/Introduction/Introduction";
-import NotConvinced from "@/app/components/HomePageComponents/NotConvinced";
-import CustomerStories from "@/app/components/HomePageComponents/CustomerStories/CustomerStories";
 import ProcessSection from "@/app/components/HomePageComponents/Process/ProcessSection";
+import ValueProposition from "@/app/components/HomePageComponents/ValueProposition/ValueProposition";
+import CaseStudy from "./components/HomePageComponents/CaseStudy/CaseStudy";
+import ClientSitesSection from "./components/HomePageComponents/ClientSites/ClientSitesSection";
 import CarouselTwo from "./components/HomePageComponents/CustomerReviews/Carousel2";
 import GetCovered from "./components/HomePageComponents/GetCovered/GetCovered";
-import ClientSitesSection from "./components/HomePageComponents/ClientSites/ClientSitesSection";
 import OfferSection from "./components/HomePageComponents/OfferSection/OfferSection";
+import Portfolio from "./components/HomePageComponents/Portfolio/Portfolio";
+import HesitateCard from "./components/HomePageComponents/HesitateCard/HesitateCard";
 
 export default function Home() {
   return (
@@ -23,9 +21,7 @@ export default function Home() {
       <ClientResult />
       <ClientSitesSection />
       <OfferSection />
-      <Introduction />
-      <NotConvinced />
-      <CustomerStories />
+      <HesitateCard />
     </section>
   );
 }
