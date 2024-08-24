@@ -1,3 +1,9 @@
+import { CarouselContainer } from "@/app/components/AboutPage/CarouselContainer";
+import { CarouselData } from "@/app/components/AboutPage/CarouselData";
+import { ClientCentricData } from "@/app/components/AboutPage/ClientCentricData";
+import DoubleImgWithText from "@/app/components/AboutPage/DoubleImgWithText";
+import { ExceptionalResultData } from "@/app/components/AboutPage/ExceptionalResultData";
+import ExpertiseSection from "@/app/components/AboutPage/ExpertiseSection";
 import StatementContainer from "@/app/components/AboutPage/StatementContainer";
 import SeconderyHeroWithNav from "@/app/components/Shared/SeconderyHeroWithNav";
 
@@ -26,6 +32,35 @@ const page = (props: Props) => {
           "From a young age, I was captivated by the elegance and innovation in design, whether in architecture, art, or technology. My passion for the sea was ignited during a family vacation aboard a luxury yacht, where the seamless blend of form and function in the interior design left a lasting impression. This experience, combined with my liberal arts degree in Physics and Computer Science, led me to a career in web design, where I merged my love for technology and art.",
           "After years of working with diverse clients, a collaboration with a yacht interior designer revealed a profound need for specialized digital solutions in this niche. This realization inspired me to focus exclusively on translating the luxury and sophistication of yacht interiors into digital experiences. Driven by this vision, I founded BlueWater Interiors, with the mission to ensure yacht designers' philosophies are reflected in every pixel, bridging the gap between exquisite design and digital innovation.",
         ]}
+      />
+      <ExpertiseSection />
+      <CarouselContainer
+        slideData={CarouselData}
+        title="Core Expertise"
+        description="Our team excels in translating the refined and often intricate design
+          philosophies of yacht interiors into a digital format. We understand
+          that in the world of luxury yachts, every detail matters—from the
+          choice of materials to the flow of space—and we bring that same
+          meticulous attention to detail to every website we create"
+      />
+      <CarouselContainer
+        slideData={CarouselData}
+        title="Specialization in Yacht Interiors"
+        description="Our specialization in yacht interiors is what sets BlueWater Interiors apart. We understand that the yacht interior design industry is unique, with its own set of challenges and expectations. The designs you create are more than just interiors—they are expressions of art, luxury, and personal style, meant to enhance the experience of life at sea"
+      />
+      <DoubleImgWithText
+        title="Client-Centric Approach"
+        info="At BlueWater Interiors, our client-centric approach is the cornerstone of everything we do. We understand that your work is not just a profession but a passion, and we are dedicated to ensuring that your digital presence reflects the true essence of your design philosophy. Our goal is to build a partnership where your vision drives the process, resulting in a website that perfectly encapsulates your brand and engages your clients."
+        data={ClientCentricData}
+        flexDir=""
+        img="/images/about-us/client-centric.png"
+      />
+      <DoubleImgWithText
+        title="Delivering Exceptional Results"
+        info="Our client-centric approach is focused on delivering results that exceed your expectations"
+        data={ExceptionalResultData}
+        flexDir="flex-row-reverse max-lg:flex-col-reverse"
+        img="/images/about-us/client-centric.png"
       />
     </main>
   );

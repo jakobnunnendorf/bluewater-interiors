@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function GetCovered({
+function StatementContiner({
   title,
   desc,
   imgSrc,
@@ -12,7 +12,7 @@ function GetCovered({
   imgSrc: string;
 }) {
   return (
-    <section className="py-24">
+    <section className="py-36">
       <article
         className={`container flex flex-col-reverse items-center gap-12 max-lg:justify-center max-lg:text-center ${flexDir}`}
       >
@@ -41,4 +41,4 @@ function GetCovered({
   );
 }
 
-export default GetCovered;
+export default StatementContiner;
