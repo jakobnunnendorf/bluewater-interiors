@@ -15,7 +15,7 @@ const SeconderyHeroWithNav: React.FC<Props> = ({
   bgImgSrc,
 }) => {
   return (
-    <section className="mx-auto max-w-[1387px] px-3 pt-3 md:px-6 md:pt-6">
+    <section className="mx-auto max-w-[1440px] px-3 pt-3 md:px-6 md:pt-6">
       <div
         className="h-[515px] w-full rounded-[16px] bg-cover bg-no-repeat px-3 max-lg:bg-center sm:rounded-[20px] md:rounded-[30px] md:px-7 lg:rounded-[40px] lg:px-[73px]"
         style={{ backgroundImage: `url(${bgImgSrc})` }}
