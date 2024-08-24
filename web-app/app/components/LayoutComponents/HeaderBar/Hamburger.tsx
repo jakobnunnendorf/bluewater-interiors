@@ -1,20 +1,27 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 
 function Hamburger({
-  isOpen,
+  isBg = true,
   toggleOpen,
 }: {
-  isOpen: boolean;
+  isBg: boolean;
   toggleOpen: () => void;
 }) {
-  const src = isOpen
-    ? "/images/nav-icons/close-burger.svg"
-    : "/images/nav-icons/open-burger.svg";
   return (
     <button className="lg:hidden" onClick={toggleOpen}>
-      <Image src={src} height={30} width={30} alt={src} />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        className={`size-6 ${isBg ? "stroke-black" : "stroke-white"}`}
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
     </button>
   );
 }

@@ -6,17 +6,29 @@ import Button from "../../UI/Button";
 import Hamburger from "./Hamburger";
 import Drawer from "../../UI/Drawer";
 
-function HeaderBar() {
+type Props = {
+  isBg?: boolean;
+};
+
+const HeaderBar: React.FC<Props> = ({ isBg = true }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => setIsOpen(!isOpen);
   return (
     <>
-      <header className="sticky top-0 z-50 bg-white shadow">
-        <section className="container flex w-full items-center justify-between py-4">
-          <Hamburger isOpen={isOpen} toggleOpen={toggleOpen} />
-          <Logo />
-          <Navigation />
-          <Button name="Contact Us" onClick={() => {}} />
+      <header
+        className={`${isBg ? "sticky top-0 z-50 bg-white shadow" : "bg-transparent"}`}
+      >
+        <section
+          className={`flex items-center justify-between py-4 ${isBg ? "container w-full" : "w-full"}`}
+        >
+          <Hamburger isBg={isBg} toggleOpen={toggleOpen} />
+          <Logo isBg={isBg} />
+          <Navigation isBg={isBg} />
+          <Button
+            bgColor={isBg ? "bg-black text-white" : "bg-white text-black"}
+            name="Contact Us"
+            onClick={() => {}}
+          />
         </section>
       </header>
       <Drawer open={isOpen} setOpen={setIsOpen}>
@@ -24,6 +36,6 @@ function HeaderBar() {
       </Drawer>
     </>
   );
-}
+};
 
 export default HeaderBar;

@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import HeaderBar from "@/app/components/LayoutComponents/HeaderBar/HeaderBar";
 import Footer from "@/app/components/LayoutComponents/Footer";
-import ContactSection from "@/app/contact/ContactSection";
-import Hero from "@/app/components/LayoutComponents/Hero/Hero";
+import HeaderBar from "@/app/components/LayoutComponents/HeaderBar/HeaderBar";
+import type { Metadata } from "next";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "BlueWater Interiors",
