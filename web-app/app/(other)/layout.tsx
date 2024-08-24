@@ -1,6 +1,7 @@
 import Footer from "@/app/components/LayoutComponents/Footer";
 import type { Metadata } from "next";
 import "../globals.css";
+import ContactUsSection from "../components/LayoutComponents/ContactUs/ContactUsSection";
 
 export const metadata: Metadata = {
   title: "BlueWater Interiors",
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="">
         <main className="">{children}</main>
+        <ContactUsSection />
         <Footer />
       </body>
     </html>
