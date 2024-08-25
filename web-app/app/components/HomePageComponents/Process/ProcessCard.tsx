@@ -8,10 +8,10 @@ type Props = {
 
 const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
   return (
-    <div className="text-gray-mid-2/50 group relative flex h-[304px] w-full max-w-[283px] cursor-pointer items-center justify-between">
+    <div className="group relative flex h-[304px] w-full max-w-[283px] cursor-pointer items-center justify-between text-gray-mid-2/50">
       <article className="relative z-20 flex w-full max-w-[187px] flex-col gap-3.5">
         <header>
-          <h3 className="group-hover:text-terquoise-blue font-gilroy-medium text-2xl font-normal uppercase">
+          <h3 className="font-gilroy-medium text-2xl font-normal uppercase group-hover:text-terquoise-blue">
             {title}
           </h3>
           {/* use id number, make a array and map it */}
@@ -34,7 +34,7 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
         <section className="flex flex-col gap-5">
           <p className="flex gap-0.5 font-gilroy-regular text-base font-normal">
             <svg
-              className="group-hover:fill-terquoise-blue fill-gray-mid-2/50 mt-1.5 max-h-2 min-w-2"
+              className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
               width="5"
               height="5"
               viewBox="0 0 5 5"
@@ -53,7 +53,7 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
           </p>
           <p className="flex gap-0.5 font-gilroy-regular text-base font-normal">
             <svg
-              className="group-hover:fill-terquoise-blue fill-gray-mid-2/50 mt-1.5 max-h-2 min-w-2"
+              className="mt-1.5 max-h-2 min-w-2 fill-gray-mid-2/50 group-hover:fill-terquoise-blue"
               width="5"
               height="5"
               viewBox="0 0 5 5"
@@ -74,7 +74,7 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
       </article>
       <div className="absolute right-20 z-10 flex w-[158px] items-center">
         {id !== 4 && (
-          <div className="bg-gray-mid group-hover:bg-terquoise-blue absolute -right-10 flex size-[88px] items-center justify-end rounded-3xl pr-6 font-gilroy-medium text-2xl text-white">
+          <div className="absolute -right-10 flex size-[88px] items-center justify-end rounded-3xl bg-gray-mid pr-6 font-gilroy-medium text-2xl text-white group-hover:bg-terquoise-blue">
             {id}
           </div>
         )}
@@ -133,7 +133,7 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
             <path
               d="M151.161 145.845C151.161 200.686 118.186 245.143 99.126 245.143C80.0662 245.143 64.6152 200.686 64.6152 145.845C64.6152 91.0046 80.0662 46.5474 99.126 46.5474C118.186 46.5474 151.161 91.0046 151.161 145.845Z"
               fill="black"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
           </g>
           <path
@@ -148,9 +148,9 @@ const ProcessCard: React.FC<Props> = ({ id, title, points }) => {
               width={134.546}
               height={246.596}
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend
                 mode="normal"
                 in="SourceGraphic"

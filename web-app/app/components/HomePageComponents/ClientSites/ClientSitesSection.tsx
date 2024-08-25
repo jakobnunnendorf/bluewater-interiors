@@ -61,7 +61,7 @@ const ClientSitesSection = (props: Props) => {
   useEffect(() => {
     const intervalId = setInterval(nextSlider, 5000);
     return () => clearInterval(intervalId);
-  }, [nextSlider]);
+  }, [nextSlider, prevSlider]);
 
   return (
     <section className="mt-20 md:mt-[193px]">

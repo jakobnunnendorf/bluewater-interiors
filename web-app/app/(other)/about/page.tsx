@@ -1,6 +1,7 @@
 import { CarouselContainer } from "@/app/components/AboutPage/CarouselContainer";
 import { CarouselData } from "@/app/components/AboutPage/CarouselData";
 import { ClientCentricData } from "@/app/components/AboutPage/ClientCentricData";
+import CollaborativeSection from "@/app/components/AboutPage/CollaborativeSection";
 import DoubleImgWithText from "@/app/components/AboutPage/DoubleImgWithText";
 import { ExceptionalResultData } from "@/app/components/AboutPage/ExceptionalResultData";
 import ExpertiseSection from "@/app/components/AboutPage/ExpertiseSection";
@@ -55,6 +56,7 @@ const page = (props: Props) => {
         flexDir=""
         img="/images/about-us/client-centric.png"
       />
+      <CollaborativeSection />
       <DoubleImgWithText
         title="Delivering Exceptional Results"
         info="Our client-centric approach is focused on delivering results that exceed your expectations"

@@ -30,10 +30,10 @@ function ClientResult() {
                   y2="191.132"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-opacity="0" />
+                  <stop stopOpacity="0" />
                   <stop offset="0.215" />
                   <stop offset="0.78" />
-                  <stop offset="1" stop-opacity="0" />
+                  <stop offset="1" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>
@@ -58,10 +58,10 @@ function ClientResult() {
                   y2="191.132"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-opacity="0" />
+                  <stop stopOpacity="0" />
                   <stop offset="0.215" />
                   <stop offset="0.78" />
-                  <stop offset="1" stop-opacity="0" />
+                  <stop offset="1" stopOpacity="0" />
                 </linearGradient>
               </defs>
             </svg>

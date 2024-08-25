@@ -1,8 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import HeadingTextLg from "../../UI/HeadingTextLg";
 import Carousel from "./Carousel";
-import { profile } from "console";
 
 interface Slider {
   img: string;
@@ -12,41 +11,36 @@ interface Slider {
 
 const Carousel2: React.FC = () => {
   const [currentSlider, setCurrentSlider] = useState<number>(0);
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
 
-  //   const reviews: Slider[] = [
-  //     {
-  //       img: "https://images.unsplash.com/photo-1421789665209-c9b2a435e3dc?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //       title: "Escape 1",
-  //       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
-  //     },
-  //     {
-  //       img: "https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //       title: "Escape 2",
-  //       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
-  //     },
-  //     {
-  //       img: "https://images.unsplash.com/photo-1719749990914-a3ba54e6343f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //       title: "Escape 3",
-  //       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
-  //     },
-  //     {
-  //       img: "https://images.unsplash.com/photo-1467195468637-72eb862bb14e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //       title: "Escape 4",
-  //       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
-  //     },
-  //     {
-  //       img: "https://images.unsplash.com/photo-1532155297578-a43684be8db8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //       title: "Escape 5",
-  //       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
-  //     },
-  //   ];
+  useEffect(() => {
+    // This function will be called on mount and whenever the screen size changes
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+
+    // Add event listener on mount
+    window.addEventListener("resize", handleResize);
+
+    // Set initial state
+    handleResize();
+
+    // Clean up event listener on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const prevSlider = () =>
     setCurrentSlider((prev) => (prev === 0 ? reviews.length - 1 : prev - 1));
+
   const nextSlider = () =>
     setCurrentSlider((prev) => (prev === reviews.length - 1 ? 0 : prev + 1));
 
-  const isSmallScreen = window.innerWidth <= 768;
+  useEffect(() => {
+    const intervalId = setInterval(nextSlider, 5000);
+    return () => clearInterval(intervalId);
+  }, [nextSlider, prevSlider]);
 
   return (
     <div className="relative mt-20 flex h-[720px] w-full transform flex-col items-center gap-5 overflow-hidden duration-1000 ease-linear lg:mt-96 lg:h-[540px] lg:flex-row lg:gap-10">
@@ -61,7 +55,6 @@ const Carousel2: React.FC = () => {
         </div>
         <div className="lg;px-5 mt-5 flex gap-3">
           {/* Arrow left */}
-
           <svg
             className="cursor-pointer stroke-black hover:fill-black hover:stroke-white"
             onClick={prevSlider}
@@ -74,9 +67,9 @@ const Carousel2: React.FC = () => {
             <circle cx="34.5323" cy="34.8795" r="34.0323" stroke="black" />
             <path
               d="M33.6124 40.3999L28.0918 34.8793M28.0918 34.8793L33.6124 29.3586M28.0918 34.8793L40.9733 34.8793"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           <svg
@@ -91,9 +84,9 @@ const Carousel2: React.FC = () => {
             <circle cx="34.5323" cy="34.8795" r="34.0323" stroke="black" />
             <path
               d="M33.6124 40.3999L28.0918 34.8793M28.0918 34.8793L33.6124 29.3586M28.0918 34.8793L40.9733 34.8793"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>
@@ -102,9 +95,9 @@ const Carousel2: React.FC = () => {
       {/* Slider container */}
       <div className="w-full overflow-hidden px-4 py-10 lg:absolute lg:-right-16 lg:z-50 lg:ml-auto lg:w-7/12">
         <div
-          className="flex items-center gap-4 duration-300 ease-linear"
+          className="flex items-center gap-5 duration-300 ease-linear"
           style={{
-            transform: `translateX(-${currentSlider * (isSmallScreen ? 316 : 400)}px)`,
+            transform: `translateX(-${currentSlider * (isSmallScreen ? 316 + 20 : 400 + 20)}px)`,
           }}
         >
           {reviews.map((review, idx) => (
