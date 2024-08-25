@@ -6,6 +6,7 @@ import DoubleImgWithText from "@/app/components/AboutPage/DoubleImgWithText";
 import { ExceptionalResultData } from "@/app/components/AboutPage/ExceptionalResultData";
 import ExpertiseSection from "@/app/components/AboutPage/ExpertiseSection";
 import StatementContainer from "@/app/components/AboutPage/StatementContainer";
+import WhatOurClientSay from "@/app/components/AboutPage/WhatOurClientSay";
 import SeconderyHeroWithNav from "@/app/components/Shared/SeconderyHeroWithNav";
 
 type Props = {};
@@ -64,6 +65,7 @@ const page = (props: Props) => {
         flexDir="flex-row-reverse max-lg:flex-col-reverse"
         img="/images/about-us/client-centric.png"
       />
+      <WhatOurClientSay />
     </main>
   );
 };
