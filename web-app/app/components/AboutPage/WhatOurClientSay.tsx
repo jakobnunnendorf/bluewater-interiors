@@ -182,7 +182,7 @@ const WhatOurClientSay = (props: Props) => {
               <button
                 key={idx}
                 onClick={() => setCurrentSlider(idx)}
-                className={`rounded-full duration-500 ${currentSlider === idx ? "h-2.5 w-[148px] bg-primary-blue sm:h-3 md:h-[15px]" : "size-2.5 bg-gray-mid sm:size-3 md:size-[15px]"}`}
+                className={`rounded-full duration-500 ${currentSlider === idx ? "h-2.5 w-[67px] bg-primary-blue sm:h-3 md:h-[15px]" : "size-2.5 bg-gray-mid sm:size-3 md:size-[15px]"}`}
               ></button>
             ))}
           </div>

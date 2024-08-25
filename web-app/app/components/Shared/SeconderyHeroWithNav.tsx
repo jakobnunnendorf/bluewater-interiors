@@ -25,7 +25,7 @@ const SeconderyHeroWithNav: React.FC<Props> = ({
           {isShowTextBg && (
             <TextWithBg title="A Showcase of Mastery and Elegance" />
           )}
-          <h2 className="mt-5 font-gilroy-medium text-xl font-semibold text-white sm:text-3xl md:text-4xl lg:text-[65px]">
+          <h2 className="mt-8 font-gilroy-medium text-xl font-semibold uppercase leading-loose text-white sm:text-3xl md:text-4xl lg:text-[65px]">
             {title}
           </h2>
           <p className="mt-2 text-center font-gilroy-medium text-sm text-white md:text-base lg:text-lg">
