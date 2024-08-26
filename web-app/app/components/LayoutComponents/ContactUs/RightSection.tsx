@@ -2,13 +2,11 @@
 import Button from "../../UI/Button";
 import Input from "../../UI/Input";
 
-type Props = {};
-
-const RightSection = (props: Props) => {
+const RightSection = ({ formTitle }: { formTitle?: string }) => {
   return (
     <div className="w-full lg:pr-[60px]">
-      <h2 className="mb-3.5 font-gilroy-bold text-3xl font-medium text-black sm:text-[46px]">
-        Contact Us
+      <h2 className="mb-5 font-gilroy-bold text-3xl font-medium text-black sm:text-[46px]">
+        {formTitle ? formTitle : "Contact Us"}
       </h2>
       <section className="mb-5 flex w-full flex-col gap-3.5">
         <Input type="text" placeholder="Name" />

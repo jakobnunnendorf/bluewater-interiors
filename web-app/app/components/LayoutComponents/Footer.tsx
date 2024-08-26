@@ -2,9 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import SocialIcons from "./Hero/HeroText/Socials";
 
-function Footer() {
+function Footer({ marginTop = "-mt-36 pt-[245px]" }: { marginTop?: string }) {
   return (
-    <footer className="relative z-0 -mt-36 bg-black pb-10 pt-[245px] text-white">
+    <footer
+      className={`relative z-0 bg-black pb-10 text-white ${marginTop ? marginTop : "pt-20"}`}
+    >
       <section className="container flex flex-wrap justify-between gap-10 border-b border-white pb-20 *:w-full *:max-w-[282px]">
         <div className="flex flex-col gap-4 font-gilroy-regular text-lg text-white">
           <Link href={"/"}>

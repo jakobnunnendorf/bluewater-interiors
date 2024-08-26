@@ -10,7 +10,7 @@ const page = (props: Props) => {
   return (
     <main>
       <SeconderyHeroWithNav
-        bgImgSrc="/images/about-us/about-hero.png"
+        bgImgSrc="/images/other-page-hero.png"
         title="Services"
         desc="At BlueWater Interiors, we offer a suite of specialized services designed to elevate your digital presence and showcase your yacht interior designs with unparalleled elegance and sophistication."
       />
