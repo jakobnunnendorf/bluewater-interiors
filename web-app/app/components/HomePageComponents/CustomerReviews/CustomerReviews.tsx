@@ -41,7 +41,7 @@ function CustomerReviews() {
         >
           &#10094;
         </button>
-        <Carousel reviews={getVisibleReviews()} />
+        {/* <Carousel review={getVisibleReviews()} /> */}
         <button
           className="absolute right-0 z-10 rounded-full bg-gray-800 p-2 text-white"
           onClick={handleNext}
